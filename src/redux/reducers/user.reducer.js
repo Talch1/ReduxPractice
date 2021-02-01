@@ -1,8 +1,8 @@
-import {SET_NAME} from "./action";
+import { SET_NAME } from "./actions/user.action";
 
 const initialState = {
-    "name":"Tolik"
-}
+  name: "Tolik",
+};
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case SET_NAME:
@@ -10,7 +10,7 @@ export default function reducer(state = initialState, action) {
         ...state,
         name: action.payload,
       };
-      default:
-          return state;
+    default:
+      return state;
   }
 }

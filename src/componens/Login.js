@@ -1,7 +1,7 @@
 import { Formik, Form, Field } from "formik";
 import React from "react";
 import { connect } from "react-redux";
-import setName from "../redux/action"
+import setName from "../redux/reducers/actions/user.action"
 
 
 export  function Login(props) {
